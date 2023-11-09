@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
-$bm-mobile: 375px;
+$bm-mobile: 786px;
 
 $dark-cyan: rgb(26, 161, 173);
 $very-dark-desaturated-blue: hsl(229, 23%, 23%);
@@ -74,10 +74,18 @@ main {
         &-1 {
             top: -520px;
             left: -167px;
+            @media (max-width: $bm-mobile) {
+                top: -622px;
+                left: -696px;
+            }
         }
         &-2 {
             bottom: -570px;
             right: -245px;
+            @media (max-width: $bm-mobile) {
+                bottom: -570px;
+                right: -700px;
+            }
         }
     }
 }
